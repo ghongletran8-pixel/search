@@ -34,7 +34,7 @@ Next in line: C6 (FX month-end hedge rebalancing conditioned on *foreign minus U
    - The US **overnight drift** (02:00–03:00 ET, about 3.7%/yr) has averaged **close to zero since 2021**, per its own authors (NY Fed, July 2026) [EX].
    - **Leveraged-ETF** end-of-day effects declined over time and look economically insignificant once fund flows are counted [EX]. But LETF rebalancing reached a record ~$50bn/day in 2026 [EX, press], so this may have changed; see C10.
    - **US market intraday momentum** weakened or reversed after 2001 in one study [EX].
-   - **London-fix reversals** disappeared from 2015 onward in FCA work [EX].
+   - **London-fix reversals** disappeared from 2015 onward in FCA work [EX; cited in an excerpt, original page not pinned down].
 3. **Rules and costs matter as much as any single edge** (details in `FUNDINGPIPS_RULES.md`):
    - **Swap-Free add-on (MT5):** FX and metals pay $10/lot instead of $5/lot and **no overnight swaps**. This undercuts the "multi-day strategies die from swaps" rejection for FX and metals, so re-test them under that cost model. Indices, energies and crypto still pay swaps. It is bought with the account.
    - **Trade-idea grouping (Master):** a new same-direction position opened within **10 minutes after closing a loser** on the same instrument joins the losing idea toward the 2% hard limit [EX]. Any re-entry logic needs a 10-minute cool-down.
@@ -288,7 +288,7 @@ Next in line: C6 (FX month-end hedge rebalancing conditioned on *foreign minus U
 - **Mechanism:** passive hedged equity mandates reset currency hedges at month-end fixes, a benchmark-driven, price-insensitive flow. Bank month-end models (e.g. Credit Agricole) publish the implied USD direction each month [EX].
 - **Counter-evidence:**
   - Our own test with the S&P 500 alone was **mixed**.
-  - FCA work finds that short-term reversals around the fix **disappeared from 2015** [EX].
+  - FCA work finds that short-term reversals around the fix **disappeared from 2015** [EX; cited in an excerpt, original page not pinned down].
   - A practitioner study over 138 month-ends (Feb 2015–Jul 2026) with S&P-only conditioning reports "a coherent pattern" but no numbers were seen [EX, PR].
   - The relative-performance variable is the new element; no post-2015 academic test of it was found.
 - **Fit:**
