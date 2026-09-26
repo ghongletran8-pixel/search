@@ -48,3 +48,8 @@ Mechanism; evidence from 2015 or later (decay reported); hold minutes to 1 day; 
 - **"High-impact news":** the rule risk of an idea is judged against the FundingPips news rules found in workstream D. Where a trade window overlaps a scheduled release, I flag it.
 - **Paywalls:** where only an abstract or summary was read, the card says so, and numbers from secondary sources are marked as such.
 - **Subagents:** not used (not requested); the work is done in this session.
+
+## Deviations from the plan (added at the end)
+- **Access:** the session's network policy blocked direct fetches of nearly all research sites and of the FundingPips help centre. Only web search worked, so every number is from search-index excerpts ([EX]) or derived ([D]). No full texts were read. See the caveat boxes at the top of each file.
+- **Scope:** 40 candidates screened, 12 full cards (brief: at least 30 and 12-15).
+- **Sizing:** besides summarizing the theory, SIZING.md derives the minimum-expected-time policy under a failure-probability budget (Kelly on a cushion above a virtual floor) and evaluates it numerically against the current fixed-fraction policy.

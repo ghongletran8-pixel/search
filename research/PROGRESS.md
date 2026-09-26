@@ -6,18 +6,20 @@ Updated as work proceeds, so partial results survive if the session stops.
 |---|---|---|
 | PLAN.md | done | search plan and assumptions |
 | D-lite: symbols, crypto, news/EA rules | done | via search-engine excerpts of official help-centre pages (direct access blocked) |
-| A: breadth screen (>= 30 candidates) | in progress | |
-| A: depth cards (12-15) + ideas.csv | not started | |
-| B: ML_4H.md | not started | |
-| C: DATA_SOURCES.md | not started | |
-| D: FUNDINGPIPS_RULES.md | not started | |
-| E: SIZING.md | not started | |
-| SOURCES.md | not started | |
+| A: breadth screen (>= 30 candidates) | done | 40 candidates screened (IDEAS.md section 4) |
+| A: depth cards (12-15) + ideas.csv | done | 12 full cards; top 5 in IDEAS.md section 1 |
+| B: ML_4H.md | done | 8 ranked proposals, negative-evidence table |
+| C: DATA_SOURCES.md | done | 14 sources with coverage, timing, revisions, licences |
+| D: FUNDINGPIPS_RULES.md | done | official rules (via excerpts) separate from trader reports; 8 questions for support |
+| E: SIZING.md | done | closed-form and numerical tables; proposed policy vs current |
+| SOURCES.md | done | every source with type and what was taken |
+
+**Finished 2026-09-26.** All deliverables committed and pushed to `claude/vibrant-cerf-pzdxkk`.
 
 ## Access limitation (important for reading every number in this dossier)
 The session's network egress policy blocks direct fetches of almost every research site (SSRN, arXiv, NBER, ScienceDirect, Wiley, Fed/ECB/BIS, Quantpedia, Quantitativo, CME, CBOE, FRED, CFTC, TreasuryDirect, Kaggle, FundingPips help centre, and others; tested 2026-09-25). Only the web-search tool works. So evidence comes from **search-index excerpts** of the cited pages (abstracts, summaries, snippets), not from reading full texts. Each number taken this way is labelled as such. Numbers should be checked against the full paper before any money is risked on them.
 
-## Raw findings so far (working notes, to be moved into the deliverables)
+## Raw findings (working notes; everything below has been moved into the deliverables)
 
 ### FundingPips (official help-centre pages, read via search excerpts)
 - Daily loss 4% of the higher of day-open balance/equity, floating P&L counts; **reset at 00:00 "Platform Time (UTC+3)"** (2 Step Flex page). This conflicts with the brief's "NY + 7 h" if the server does not shift with US DST. Needs confirmation in MT5 (compare server time with UTC in both DST regimes).
@@ -54,3 +56,7 @@ The session's network egress policy blocks direct fetches of almost every resear
 - A18 Screens with no usable evidence: SGE premium (no study), COMEX gold option pinning (practitioner only), FX option-expiry pinning (commentary only), CNY fix surprise to AUD (commentary only), Fed blackout (weekly horizon; Neuhierl & Weber), Tokyo lunch break (volatility only), vol-control flows (no academic return evidence), BoJ ETF afternoon buying (program stopped 2024), FX post-news drift (little drift; Chaboud-type evidence), oil intraday momentum (USO 2006-2018: 1.85%/yr; too small vs 4.8 bps cost), OPEC (news, rare).
 - B seeds: Aleti, Bollerslev & Siggaard (Mgmt Sci 2025): lagged high-frequency factor-zoo returns predict intraday market returns; OOS Sharpe after costs. Schmidhuber & Safari (Physica A 2025): trending regime from a few hours to a few years, reversion at shorter and longer horizons (tick data 14 yrs futures).
 - FundingPips: Swap-Free add-on at purchase (MT5 only): FX & metals commission $10/lot instead of $5; no swaps on FX & metals (indices, energies, crypto still pay swaps). This changes the economics of multi-day FX/metal holds.
+
+## Final log
+- 2026-09-25/26: screening, cards, rules, data, ML review, sizing and sources written and pushed, one commit per file.
+- Numbers in SIZING.md come from closed-form formulas and a finite-difference solution of the same model, run in the session scratchpad. No market data and no backtests were used.
