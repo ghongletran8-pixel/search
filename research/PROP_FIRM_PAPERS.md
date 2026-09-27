@@ -65,7 +65,7 @@ Added 2026-09-27 at the owner's request.
 
 ## 4. Applying their framework to our contract (synthetic model)
 
-**Model [SIM]** (scratchpad simulation; synthetic paths only, no market data):
+**Model [SIM]** (synthetic paths only, no market data; `model_scripts/contract_value_mc.py` reproduces the table with seed 11):
 - Daily P&L ~ N(μ, σ²) in % of the initial balance, with μ = (SR/√252)·σ, so **SR is annualized and net of costs**.
 - Daily steps with Brownian-bridge checks for intraday touches of the **−12% static floor** and the **4% daily limit** (from the day's opening equity).
 - Target checked at the daily close.

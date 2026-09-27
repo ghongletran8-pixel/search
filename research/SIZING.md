@@ -2,7 +2,7 @@
 
 Workstream E. Compiled 2026-09-25.
 
-> **What is computed here.** Theory citations come from search-index excerpts [EX] or are marked "from memory, not re-read". All numbers in the tables are **closed-form or numerical solutions of a Brownian-motion model** whose inputs are stated. They are **not backtests** and use no market data. The formulas are in §4, so anyone can reproduce them.
+> **What is computed here.** Theory citations come from search-index excerpts [EX] or are marked "from memory, not re-read". All numbers in the tables are **closed-form or numerical solutions of a Brownian-motion model** whose inputs are stated. They are **not backtests** and use no market data. The formulas are in §4, and `model_scripts/sizing_model.py` reproduces every table.
 
 ## 1. The problem in one paragraph
 
@@ -34,9 +34,9 @@ We control the risk we run. The account must reach **+10%** (phase 1, then a new
 | Annual SR | **A. Constant σ** (σ %/day; E[T1] + E[T2] = total days) | **B. Full Kelly on cushion** (σ at start; total days) | **C. Half Kelly on cushion** (σ at start; total days) |
 |---|---|---|---|
 | 1.0 | 0.52%; 272 + 145 = **417** | 0.85%; 210 + 122 = **332** | 0.64%; 225 + 128 = **353** |
-| 1.5 | 0.78%; 121 + 65 = **185** | 1.27%; 93 + 54 = **148** | 0.96%; 100 + 57 = **157** |
+| 1.5 | 0.78%; 121 + 65 = **185** | 1.27%; 93 + 54 = **147** | 0.96%; 100 + 57 = **157** |
 | 2.0 | 1.04%; 68 + 36 = **104** | 1.70%; 53 + 30 = **83** | 1.29%; 56 + 32 = **88** |
-| 2.5 | 1.30%; 44 + 23 = **67** | 2.12%; 34 + 20 = **53** | 1.61%; 36 + 21 = **56** |
+| 2.5 | 1.30%; 43 + 23 = **67** | 2.12%; 34 + 20 = **53** | 1.61%; 36 + 21 = **56** |
 | 3.0 | 1.56%; 30 + 16 = **46** | 2.55%; 23 + 14 = **37** | 1.93%; 25 + 14 = **39** |
 
 - Virtual floors: B uses C = 13.48% (phase 1) and 14.12% (phase 2); C uses C = 20.42% and 21.91%.
