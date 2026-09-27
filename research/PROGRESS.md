@@ -60,3 +60,4 @@ The session's network egress policy blocks direct fetches of almost every resear
 ## Final log
 - 2026-09-25/26: screening, cards, rules, data, ML review, sizing and sources written and pushed, one commit per file.
 - Numbers in SIZING.md come from closed-form formulas and a finite-difference solution of the same model, run in the session scratchpad. No market data and no backtests were used.
+- 2026-09-27: added PROP_FIRM_PAPERS.md at the owner's request. Papers 1 (Lim, SSRN 7178078) and 3 (Matilla Serrano, SSRN 7468080) verified from SSRN abstract excerpts. Paper 2 (claimed SSRN 7260819) not found; closest real papers summarized instead (Lim SSRN 7184138; Matilla Serrano SSRN 7429100, 7488382). Synthetic contract-value simulation run in the scratchpad (no market data).

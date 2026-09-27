@@ -139,6 +139,9 @@ The proposed row uses Table 2's cap = 1.0% values; with a 0.9% cap the times sit
 - **The main lever is Sharpe itself.** Time ∝ 1/SR².
 - If new edges lift SR to 2–2.5, the current fixed 0.45% risk leaves **about half of the speed** unused (184–228 days versus ~97–118). Raise risk to the 0.9–1.0%/day cap then, and only after the higher Sharpe is **measured live**.
 
+## 6b. See also: the contract-value view
+`PROP_FIRM_PAPERS.md` applies the 2026 prop-contract literature (Lim; Matilla Serrano) to our FundingPips contract with a synthetic model that includes a one-year funded stage. Contract value per $50k account peaks near **σ ≈ 1%/day** because the 4% daily limit cuts value above that. At SR ≈ 1 this is more aggressive than the ≥ 90%-pass policy above. Which objective applies (≥ 90% pass on one account, or maximum expected value across several accounts) is a decision for the owner.
+
 ## 7. Caveats
 - **Estimation risk dominates:** over-estimating Sharpe leads to over-betting. The cushion formula is only as good as `ŝ`.
 - Brownian and normal assumptions ignore fat tails, volatility clustering, serial correlation of daily P&L, discrete trades and news gaps. All of these make the real floor and daily-limit risks larger than shown.
