@@ -106,3 +106,10 @@ Median days to pass both phases (from the same runs): at SR 1.0, **397 / 221 / 1
 
 ## 6. Sources for this file
 See `SOURCES.md` section F.
+
+## 7. See also
+`ONE_MONTH_PLAN.md` (added 27 Sep 2026) reviews further 2026 items and models what passing both phases in one month requires:
+- the contract Atlas and Real Contracts details;
+- Topstep's official 2025 pass and payout disclosure, and industry base rates;
+- the CFTC consultation reported in the press;
+- goal-reaching theory.

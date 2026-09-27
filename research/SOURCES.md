@@ -180,3 +180,20 @@ Every source used in this dossier: citation, year, URL, type, and what was taken
 | F8 | Third-party reviews: CryptoSlate, NewYorkCityServers, fundingpips.it.com | 2026 | https://cryptoslate.com/prop-firms/fundingpips-review/ | FORUM | 2-Step Flex entry price "from $32"; $50k price not found |
 
 Note: "Valuing Proprietary Trading Firm Evaluation Contracts: Closed Form, Cross-Firm Dispersion and the Source of the Margin" (claimed SSRN 7260819) could **not** be found; it is not listed as a source.
+
+## G. One-month plan: further 2026 research (ONE_MONTH_PLAN.md)
+
+| # | Citation | Year | URL | Type | What was taken |
+|---|---|---|---|---|---|
+| G1 | Matilla Serrano, F. "A Versioned Contract Atlas of Retail Futures Evaluations…", SSRN 7429100 (abstract details) | 2026 | https://ssrn.com/abstract=7429100 | WP | 23 futures providers, 177 configurations across 22 providers (5 Sep 2026); nominal fields insufficient to identify contracts; rule taxonomy |
+| G2 | Unattributed excerpt (likely G1 or F5): pass probability 48.02% at 25K → 28.55% at 150K; first-payout eligibility 38.63% → 51.96% | 2026 | (search excerpt) | WP (unattributed) | Target-to-drawdown ratio drives pass probability |
+| G3 | Topstep. 2025 trader-performance disclosure (via topstep.com pages and third-party summaries) | 2026 | https://www.topstep.com/ ; https://traderssecondbrain.com/guides/prop-firm-pass-rate | OFF (via excerpt) | 16.8% of combines passed; 51.8% of individuals passed at least one; 33.3% of funded got a payout; 0.71% moved to Live |
+| G4 | Earn2Trade published pass rates (via Myfxbook/review summaries) | 2025–26 | https://www.myfxbook.com/prop-firms/earn2trade | OFF via PR | 10.42% (2024), 8.89% (2025) |
+| G5 | Track360. "Prop trading statistics 2026" | 2026 | https://www.track360.io/blog/prop-trading-industry-statistics-2026 | PR | Blended pass rate 12.3%; ~45% of funded traders paid; ~7% of buyers ever paid |
+| G6 | Finance Magnates. "Only 7% of 300,000 prop trading accounts achieved payouts" | n/s | https://www.tradingview.com/news/financemagnates:3a251e333094b:0-exclusive-only-7-of-300-000-prop-trading-accounts-achieved-payouts/ | PRESS | Payout base rate |
+| G7 | FTMO third-party estimates (Track360, CoinLaw, others) | 2026 | https://track360.io/blog/ftmo-review-2026-operator-trader-perspective | PR | Stage 1 ≈ 32–37%, stage 2 ≈ 50–60% of passers, combined ≈ 10%; FTMO publishes no official pass rate |
+| G8 | CoinLaw and others. FundingPips statistics | 2026 | https://coinlaw.io/fundingpips-statistics/ | PR | Over $266M rewards since 2022; over $69M and over 70,000 rewards in H1 2026; no official pass rate found |
+| G9 | Track360 regulation roundup Q3 2026; The Industry Spread; JournalX | 2026 | https://track360.io/blog/prop-firm-regulation-news-roundup-q3-2026 ; https://theindustryspread.com/retail-prop-trading-regulation-2026-my-forex-funds-cftc/ | PRESS | CFTC consultation on whether challenge fees are commodity-pool interests; closes around 30 Nov 2026 |
+| G10 | CFTC press release 9284-26. "CFTC seeks public comment on proposed rule changes for CPO and CTA registration" | 2026 | https://www.cftc.gov/PressRoom/PressReleases/9284-26 | OFF | Related regulatory activity (title seen) |
+| G11 | Barucci, E., Lan, Y. "Shortermism and excessive risk taking in optimal execution with a target performance." arXiv 2505.15611 | 2025 | https://arxiv.org/pdf/2505.15611 | WP | A target payoff gives short-termism without excessive risk; high P(upper barrier), low P(lower barrier) |
+| G12 | Cvitanić, J., Spivak, G. (1999), with Browne (1999): maximizing P(goal by deadline) = digital-option replication | 1999 | (cited via excerpt with E5) | PR | Deadline-goal theory |

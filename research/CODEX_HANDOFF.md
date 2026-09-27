@@ -21,12 +21,14 @@ Read this first. It explains what the bundle is, how far to trust it, and what t
 | 4 | `FUNDINGPIPS_RULES.md` | Rules the system must encode (news windows, 2% per idea, 10-minute re-entry rule, weekends, EA ownership, lot limits, costs, Swap-Free add-on), plus 8 questions for FundingPips support |
 | 5 | `SIZING.md` | Goal-vs-floor theory; recommended policy `σ_day = min(cap, k·ŝ·(x + C))`; comparison with the current 0.45%/trade policy |
 | 6 | `PROP_FIRM_PAPERS.md` | 2026 prop-contract papers (Lim; Matilla Serrano), which of them exist, and a contract-value model of our account |
+| 6b | `ONE_MONTH_PLAN.md` | **Staged plan** (steps 0–5 with gates) to raise Sharpe and size for speed; what a one-month pass requires; more 2026 prop research |
 | 7 | `ML_4H.md` | 8 ranked, testable proposals for the 4 h model (P1: mechanism-based state features; P2: meta-label or abstention layer; …) and what does not work |
 | 8 | `DATA_SOURCES.md` | Free data: economic calendar with actual/forecast (ForexFactory-derived), CFTC COT, SqueezeMetrics GEX, CBOE VIX family, FRED/ALFRED, Treasury auctions API, Fed calendars, index-rebalance rules |
 | 9 | `ideas.csv` | One row per candidate (40), with scores and priorities |
 | 10 | `SOURCES.md` | Every source with URL, type and what was taken |
 | — | `PLAN.md`, `PROGRESS.md` | Search plan, deviations and working notes |
 | — | `model_scripts/sizing_model.py` | Reproduces all tables in `SIZING.md` (pure Python, seconds) |
+| — | `model_scripts/one_month_mc.py` | Reproduces the one-month feasibility tables in `ONE_MONTH_PLAN.md` §3 (pure Python, about 20 s) |
 | — | `model_scripts/contract_value_mc.py` | Reproduces the contract-value table in `PROP_FIRM_PAPERS.md` §4 (pure Python, about 1 minute, seed 11) |
 
 ## 3. Context from the owner's brief (condensed)
@@ -49,6 +51,9 @@ Read this first. It explains what the bundle is, how far to trust it, and what t
 - **Already rejected by the owner** (do not re-propose without a new, post-2015-evidenced conditioning variable): see the list in `PLAN.md` and the original brief. It covers unconditional time-of-day patterns, fix windows, TOM, CPI/PPI/NFP days, most central-bank events, noise-area momentum on FX and metals, multi-day strategies (swaps), and 1-minute scalping.
 
 ## 4. What to do next (priority order)
+
+> The owner's newest target is **passing both phases within one month**. Read `ONE_MONTH_PLAN.md` first. It shows this needs an annual Sharpe of about 6–7 for a coin-flip chance, so the plan raises Sharpe first (Steps 0–3) and then sizes for speed (Step 4). The steps below match that plan.
+
 1. **Clarify rules with FundingPips support first** (`FUNDINGPIPS_RULES.md` §4):
    - the server time zone and daylight-saving behaviour (the help centre says "UTC+3", the brief says NY + 7 h);
    - the definition of "gap trading" (this blocks card C5);
